@@ -7,11 +7,16 @@
     <title>Vision simulator</title>
     <script src="https://danielelder.github.io/vision-simulator/vendor/aframe.min.js"></script>
     <script src="https://danielelder.github.io/vision-simulator/vendor/aframe-ar.js"></script>
+    <script src="main.js"></script>
     <link rel="stylesheet" href="main.css" />
 </head>
-<body class="tunnel-vision">
-    <a-scene embedded arjs="debugUIEnabled: false; sourceType: webcam;">
-        <a-entity camera></a-entity>
-    </a-scene>
+<body>
+    <ul class="menu">
+        <li><button data-condition="achromatopsia">Achromatopsia</button></li>
+        <li><button data-condition="low-vision">Low vision</button></li>
+        <li><button data-condition="blind">Blind</button></li>
+        <li><button data-condition="central-vision-loss">Central vision loss</button></li>
+        <li><button data-condition="tunnel-vision">Tunnel vision</button></li>
+    </ul>
 </body>
 </html>
