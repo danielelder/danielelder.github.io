@@ -20,6 +20,10 @@
     cursor: pointer;
 }
 
+.menu button:hover {
+    text-decoration: underline;
+}
+
 .low-vision {
     filter: blur(4px);
 }
