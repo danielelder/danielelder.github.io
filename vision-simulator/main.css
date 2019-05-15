@@ -1,0 +1,32 @@
+.low-vision {
+    filter: blur(4px);
+}
+
+.blind {
+    filter: blur(2rem);
+}
+
+.black-and-white {
+    filter: grayscale(100%);
+}
+
+.central-vision-loss::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(closest-side, #000, transparent, transparent);
+}
+
+
+.tunnel-vision::after {
+    content: '';
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background: radial-gradient(closest-side, transparent, #000, #000);
+}
