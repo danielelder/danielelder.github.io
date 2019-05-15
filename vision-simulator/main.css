@@ -39,7 +39,7 @@
     left: 0;
     bottom: 0;
     right: 0;
-    background: radial-gradient(circle closest-side, #000, transparent, transparent);
+    background: radial-gradient(circle closest-side, #000, #000, transparent);
 }
 
 .tunnel-vision::after {
