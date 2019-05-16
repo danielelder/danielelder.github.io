@@ -35,23 +35,30 @@
 .achromatopsia {
     filter: grayscale(100%);
 }
-
+.central-vision-loss::before, 
 .central-vision-loss::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
     background: radial-gradient(circle closest-side, #000, #000, transparent);
+    width: 50%;
 }
 
+.tunnel-vision::before, 
 .tunnel-vision::after {
     content: '';
     position: absolute;
     top: 0;
     left: 0;
     bottom: 0;
-    right: 0;
     background: radial-gradient(circle closest-side, transparent, #000, #000);
+    width: 50%;
+}
+
+.central-vision-loss::after,
+.tunnel-vision::after {
+    left: auto;
+    right: 0;
 }
